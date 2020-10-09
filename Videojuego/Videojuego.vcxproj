@@ -142,12 +142,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cocos.cpp" />
+    <ClCompile Include="Fantasmas.cpp" />
     <ClCompile Include="Juego.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Mapa.cpp" />
     <ClCompile Include="PacMan.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cocos.h" />
+    <ClInclude Include="Fantasmas.h" />
     <ClInclude Include="Juego.h" />
     <ClInclude Include="Mapa.h" />
     <ClInclude Include="PacMan.h" />

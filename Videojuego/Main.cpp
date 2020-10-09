@@ -7,5 +7,5 @@ using namespace std;
 
 int main() {
 	
-	Juego partida1(800, 600, "titulo");
+	Juego partida1(800,600,"Pic—am");
 }
