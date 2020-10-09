@@ -9,10 +9,15 @@ using namespace std;
 class Juego
 {
 private:
+	Clock clock;
+	Time time;
 	RenderWindow * ventana1;
 	Texture textura2;
 	PacMan pacman;
 	Fantasmas Fantasma1;
+	Fantasmas Fantasma2;
+	Fantasmas Fantasma3;
+	Fantasmas Fantasma4;
 	Sprite* background;
 	Event* evento1;
 	int fps;

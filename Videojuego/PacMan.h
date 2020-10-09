@@ -6,11 +6,13 @@ using namespace std;
 class PacMan : public Sprite
 {
 private:
+	int x;
+	int y;
 	Texture texturapc;
 	Vector2f velocidad;
 public:
 	PacMan();
-	void dibujar();
+	//void update();
 	void update(Time& delta);
 };
 

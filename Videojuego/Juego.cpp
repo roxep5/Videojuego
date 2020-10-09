@@ -6,9 +6,16 @@ Juego::Juego(int resolucion_X, int resolucion_y, string titulo)
 	ventana1 = new RenderWindow(VideoMode(resolucion_X, resolucion_y, 32), titulo);
 	ventana1->setFramerateLimit(60);
 	Vector2f vec;
-	vec.x = 470;
-	vec.y = 210;//crear constructor en fantasma para decir donde empieza
+	vec.x = 430;
+	vec.y = 270;//crear constructor en fantasma para decir donde empieza
 	Fantasma1.setPosition(vec);
+	vec.x = 400;
+	Fantasma2.setPosition(vec);
+	vec.x = 370;
+	Fantasma3.setPosition(vec);
+	vec.x = 340;
+	Fantasma4.setPosition(vec);
+
 	//sprite1 = new Sprite;
 	//+9sprite2 = new Sprite;;
 	textura2.loadFromFile("mapa.png");
@@ -38,14 +45,21 @@ void Juego::dibujar()
 	
 	ventana1->draw(*background);
 	ventana1->draw(Fantasma1);
+	ventana1->draw(Fantasma2);
+	ventana1->draw(Fantasma3);
+	ventana1->draw(Fantasma4);
 	ventana1->draw(pacman);
 	ventana1->display();
 }
 
 void Juego::getLoop() {
 	while (ventana1->isOpen()) {
+
+		time = clock.restart();
 		procesar_Eventos();
+		
 		//sprite2->setRotation(sprite2->getRotation()+3);
+		pacman.update(time);
 		dibujar();
 	}
 }
