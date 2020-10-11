@@ -58,6 +58,15 @@ Juego::Juego(int resolucion_X, int resolucion_y, string titulo)
 	rectangulo17 = new Mapa(sf::Vector2f(35.f, 50.f), Vector2f(381, 378));
 	rectangulo18 = new Mapa(sf::Vector2f(194.f, 23.f), Vector2f(305, 467));
 	rectangulo19 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+	rectangulo20 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+	rectangulo21 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+	rectangulo22 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+	rectangulo23 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+	rectangulo24 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+	rectangulo25 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+	rectangulo26 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+	rectangulo27 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+	rectangulo28 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
 	getLoop();
 
 	

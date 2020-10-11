@@ -42,6 +42,13 @@ private:
 	Mapa* rectangulo19;
 	Mapa* rectangulo20;
 	Mapa* rectangulo21;
+	Mapa* rectangulo22;
+	Mapa* rectangulo23;
+	Mapa* rectangulo24;
+	Mapa* rectangulo25;
+	Mapa* rectangulo26;
+	Mapa* rectangulo27;
+	Mapa* rectangulo28;
 	int fps;
 public:
 	Juego(int resolucion_X, int resolucion_y, string titulo);
