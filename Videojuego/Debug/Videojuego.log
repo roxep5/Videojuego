@@ -1,12 +1,4 @@
-﻿  PacMan.cpp
-C:\Users\Roxep.DESKTOP-T150PV9\source\repos\Videojuego\Videojuego\PacMan.cpp(10,16): warning C4244: '=': conversión de 'int' a 'T'; posible pérdida de datos
-          with
-          [
-              T=float
-          ]
-C:\Users\Roxep.DESKTOP-T150PV9\source\repos\Videojuego\Videojuego\PacMan.cpp(11,16): warning C4244: '=': conversión de 'int' a 'T'; posible pérdida de datos
-          with
-          [
-              T=float
-          ]
+﻿  Juego.cpp
+  Main.cpp
+  Generando código...
   Videojuego.vcxproj -> C:\Users\Roxep.DESKTOP-T150PV9\source\repos\Videojuego\Debug\Videojuego.exe
