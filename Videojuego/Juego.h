@@ -4,6 +4,7 @@
 #include "PacMan.h"
 #include "Fantasmas.h"
 #include "mapa.h"
+#include<List>
 
 using namespace sf;
 using namespace std;
@@ -21,34 +22,7 @@ private:
 	Fantasmas Fantasma4;
 	Sprite* background;
 	Event* evento1;
-	Mapa* rectangulo;
-	Mapa* rectangulo2;
-	Mapa* rectangulo3;
-	Mapa* rectangulo4;
-	Mapa* rectangulo5;
-	Mapa* rectangulo6;
-	Mapa* rectangulo7;
-	Mapa* rectangulo8;
-	Mapa* rectangulo9;
-	Mapa* rectangulo10;
-	Mapa* rectangulo11;	
-	Mapa* rectangulo12;
-	Mapa* rectangulo13;
-	Mapa* rectangulo14;
-	Mapa* rectangulo15;
-	Mapa* rectangulo16;
-	Mapa* rectangulo17;
-	Mapa* rectangulo18;
-	Mapa* rectangulo19;
-	Mapa* rectangulo20;
-	Mapa* rectangulo21;
-	Mapa* rectangulo22;
-	Mapa* rectangulo23;
-	Mapa* rectangulo24;
-	Mapa* rectangulo25;
-	Mapa* rectangulo26;
-	Mapa* rectangulo27;
-	Mapa* rectangulo28;
+	Mapa* rectangulo[100];
 	int fps;
 public:
 	Juego(int resolucion_X, int resolucion_y, string titulo);

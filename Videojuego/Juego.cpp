@@ -35,38 +35,39 @@ Juego::Juego(int resolucion_X, int resolucion_y, string titulo)
 	background=new Sprite(textura2);
 	background->setScale(800.f / background->getTexture()->getSize().x, 600.f / background->getTexture()->getSize().y);
 	//esquinas
-	rectangulo =new Mapa(Vector2f(800.f, 20.f),Vector2f(0,0));
-	rectangulo2 = new Mapa(sf::Vector2f(20.f, 600.f), Vector2f(0, 0));
-	rectangulo3 = new Mapa(sf::Vector2f(800.f, 20.f),Vector2f(0, 580));
-	rectangulo4 =new Mapa(sf::Vector2f(20.f, 600.f),Vector2f(780, 0));
+	rectangulo[0]=new Mapa(Vector2f(800.f, 20.f),Vector2f(0,0));
+	rectangulo[1] =new Mapa(sf::Vector2f(20.f, 600.f), Vector2f(0, 0));
+	rectangulo[2]=new Mapa(sf::Vector2f(800.f, 20.f),Vector2f(0, 580));
+	rectangulo[3] =new Mapa(sf::Vector2f(20.f, 600.f),Vector2f(780, 0));
 	//cuadrados superiores
-	rectangulo5 =new Mapa(sf::Vector2f(88.f, 38.f), Vector2f(80, 56));
-	rectangulo6 = new Mapa(sf::Vector2f(110.f, 38.f), Vector2f(220, 56));
-	rectangulo7 = new Mapa(sf::Vector2f(110.f, 38.f), Vector2f(469, 56));
-	rectangulo8 = new Mapa(sf::Vector2f(88.f, 38.f), Vector2f(634, 56));
+	rectangulo[4] =new Mapa(sf::Vector2f(88.f, 38.f), Vector2f(80, 56));
+	rectangulo[5] = new Mapa(sf::Vector2f(110.f, 38.f), Vector2f(220, 56));
+	rectangulo[6] = new Mapa(sf::Vector2f(110.f, 38.f), Vector2f(469, 56));
+	rectangulo[7] = new Mapa(sf::Vector2f(88.f, 38.f), Vector2f(634, 56));
 	//segunda fila de cuadrados
-	rectangulo9 = new Mapa(sf::Vector2f(88.f, 20.f), Vector2f(80, 130));
-	rectangulo10 = new Mapa(sf::Vector2f(88.f, 20.f), Vector2f(634, 130));
+	rectangulo[8] = new Mapa(sf::Vector2f(88.f, 20.f), Vector2f(80, 130));
+	rectangulo[9] = new Mapa(sf::Vector2f(88.f, 20.f), Vector2f(634, 130));
 	//cuadrados del medio
-	rectangulo11 = new Mapa(sf::Vector2f(169.f, 195.f), Vector2f(0, 189));
-	rectangulo12 = new Mapa(sf::Vector2f(169.f, 195.f), Vector2f(631, 189));
+	rectangulo[10] = new Mapa(sf::Vector2f(169.f, 195.f), Vector2f(0, 189));
+	rectangulo[11] = new Mapa(sf::Vector2f(169.f, 195.f), Vector2f(631, 189));
 	//Ts del medio
-	rectangulo13 = new Mapa(sf::Vector2f(35.f, 75.f), Vector2f(381, 20));
-	rectangulo14 = new Mapa(sf::Vector2f(194.f, 23.f), Vector2f(305, 127));
-	rectangulo15 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 150));
-	rectangulo16 = new Mapa(sf::Vector2f(194.f, 23.f), Vector2f(305, 356));
-	rectangulo17 = new Mapa(sf::Vector2f(35.f, 50.f), Vector2f(381, 378));
-	rectangulo18 = new Mapa(sf::Vector2f(194.f, 23.f), Vector2f(305, 467));
-	rectangulo19 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
-	rectangulo20 = new Mapa(sf::Vector2f(30.f, 133.f), Vector2f(223, 133));
-	rectangulo21 = new Mapa(sf::Vector2f(88.f, 29.f), Vector2f(250, 183));
-	rectangulo22 = new Mapa(sf::Vector2f(30.f, 133.f), Vector2f(552, 134));
-	rectangulo23 = new Mapa(sf::Vector2f(88.f, 29.f), Vector2f(475, 186));
-	rectangulo24 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
-	rectangulo25 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
-	rectangulo26 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
-	rectangulo27 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
-	rectangulo28 = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+	rectangulo[12] = new Mapa(sf::Vector2f(35.f, 75.f), Vector2f(381, 20));
+	rectangulo[13] = new Mapa(sf::Vector2f(194.f, 23.f), Vector2f(305, 127));
+	rectangulo[14] = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 150));
+	rectangulo[15] = new Mapa(sf::Vector2f(194.f, 23.f), Vector2f(305, 356));
+	rectangulo[16] = new Mapa(sf::Vector2f(35.f, 50.f), Vector2f(381, 378));
+	rectangulo[17] = new Mapa(sf::Vector2f(194.f, 23.f), Vector2f(305, 467));
+	rectangulo[18] = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+	rectangulo[19] = new Mapa(sf::Vector2f(30.f, 133.f), Vector2f(223, 133));
+	rectangulo[20] = new Mapa(sf::Vector2f(88.f, 29.f), Vector2f(250, 183));
+	rectangulo[21] = new Mapa(sf::Vector2f(30.f, 133.f), Vector2f(552, 134));
+	rectangulo[22] = new Mapa(sf::Vector2f(88.f, 29.f), Vector2f(475, 186));
+	rectangulo[23] = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+	rectangulo[24] = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+	rectangulo[25] = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+	rectangulo[26] = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+	rectangulo[27] = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+
 	getLoop();
 
 	
@@ -82,25 +83,10 @@ void Juego::dibujar()
 	ventana1->draw(Fantasma3);
 	ventana1->draw(Fantasma4);
 	ventana1->draw(pacman);
-	ventana1->draw(*rectangulo);
-	ventana1->draw(*rectangulo2);
-	ventana1->draw(*rectangulo3);
-	ventana1->draw(*rectangulo4);
-	ventana1->draw(*rectangulo5);
-	ventana1->draw(*rectangulo6);
-	ventana1->draw(*rectangulo7);
-	ventana1->draw(*rectangulo8);
-	ventana1->draw(*rectangulo9);
-	ventana1->draw(*rectangulo10);
-	ventana1->draw(*rectangulo11);
-	ventana1->draw(*rectangulo12);
-	ventana1->draw(*rectangulo13);
-	ventana1->draw(*rectangulo14);
-	ventana1->draw(*rectangulo15);
-	ventana1->draw(*rectangulo16);
-	ventana1->draw(*rectangulo17);
-	ventana1->draw(*rectangulo18);
-	ventana1->draw(*rectangulo19);
+	for(int i=0;i<27;i++)
+	ventana1->draw(*rectangulo[i]);
+
+	
 	ventana1->display();
 }
 
