@@ -62,11 +62,25 @@ Juego::Juego(int resolucion_X, int resolucion_y, string titulo)
 	rectangulo[20] = new Mapa(sf::Vector2f(88.f, 29.f), Vector2f(250, 183));
 	rectangulo[21] = new Mapa(sf::Vector2f(30.f, 133.f), Vector2f(552, 134));
 	rectangulo[22] = new Mapa(sf::Vector2f(88.f, 29.f), Vector2f(475, 186));
-	rectangulo[23] = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
-	rectangulo[24] = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
-	rectangulo[25] = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
-	rectangulo[26] = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
-	rectangulo[27] = new Mapa(sf::Vector2f(35.f, 60.f), Vector2f(381, 489));
+	rectangulo[23] = new Mapa(sf::Vector2f(33.f, 70.f), Vector2f(220, 303));
+	rectangulo[24] = new Mapa(sf::Vector2f(33.f, 70.f), Vector2f(554, 303));
+	rectangulo[25] = new Mapa(sf::Vector2f(106.f, 20.f), Vector2f(220, 415));
+	rectangulo[26] = new Mapa(sf::Vector2f(106.f, 20.f), Vector2f(471, 415));
+	rectangulo[27] = new Mapa(sf::Vector2f(52.f, 23.f), Vector2f(20, 470));
+	rectangulo[28] = new Mapa(sf::Vector2f(52.f, 23.f), Vector2f(728, 470));
+	rectangulo[29] = new Mapa(sf::Vector2f(84.f, 17.f), Vector2f(633, 416));
+	rectangulo[30] = new Mapa(sf::Vector2f(31.f, 77.f), Vector2f(633, 416));
+	rectangulo[31] = new Mapa(sf::Vector2f(84.f, 17.f), Vector2f(87, 416));
+	rectangulo[32] = new Mapa(sf::Vector2f(31.f, 77.f), Vector2f(137, 416));
+	rectangulo[33] = new Mapa(sf::Vector2f(246.f, 18.f), Vector2f(85, 526));
+	rectangulo[34] = new Mapa(sf::Vector2f(246.f, 18.f), Vector2f(473, 526));
+	rectangulo[35] = new Mapa(sf::Vector2f(31.f, 58.f), Vector2f(221, 473));
+	rectangulo[36] = new Mapa(sf::Vector2f(31.f, 58.f), Vector2f(553, 476));
+	rectangulo[37] = new Mapa(sf::Vector2f(58.f, 12.f), Vector2f(304, 243));
+	rectangulo[38] = new Mapa(sf::Vector2f(12.f, 80.f), Vector2f(304, 243));
+	rectangulo[39] = new Mapa(sf::Vector2f(196.f, 12.f), Vector2f(304, 312));
+	rectangulo[40] = new Mapa(sf::Vector2f(60.f, 12.f), Vector2f(441, 244));
+	rectangulo[41] = new Mapa(sf::Vector2f(12.f, 74.f), Vector2f(486, 243));
 
 	getLoop();
 
@@ -77,13 +91,13 @@ void Juego::dibujar()
 {
 	ventana1->clear();
 	
-	ventana1->draw(*background);
+	//ventana1->draw(*background);
 	ventana1->draw(Fantasma1);
 	ventana1->draw(Fantasma2);
 	ventana1->draw(Fantasma3);
 	ventana1->draw(Fantasma4);
 	ventana1->draw(pacman);
-	for(int i=0;i<27;i++)
+	for(int i=0;i<42;i++)
 	ventana1->draw(*rectangulo[i]);
 
 	
